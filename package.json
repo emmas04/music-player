@@ -3,9 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "electron.cjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "electron": "electron .",
+    "package": "npm run build && electron-builder",
     "lint": "oxlint",
     "preview": "vite preview"
   },
@@ -17,7 +20,21 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
+    "electron": "^44.3.0",
+    "electron-builder": "^25.1.8",
     "oxlint": "^1.81.0",
     "vite": "^8.3.0"
+  },
+  "build": {
+    "appId": "com.emma.pixelmusicplayer",
+    "productName": "Pixel Music Player",
+    "compression": "maximum",
+    "files": [
+      "dist/**/*",
+      "electron.cjs"
+    ],
+    "win": {
+      "target": "nsis"
+    }
   }
 }
