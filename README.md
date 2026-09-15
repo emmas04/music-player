@@ -2,7 +2,7 @@
 
 A pixel-art desktop music player built with React and Electron. Features a custom-drawn turntable, spinning vinyl, and an animated needle that "moves" while a track plays.
 
-![Pixel Music Player screenshot](pixel-music-player-screenshot.png)
+![Pixel Music Player screenshot](pixel-music-player-screenshot.PNG)
 
 ## Features
 
