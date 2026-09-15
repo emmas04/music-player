@@ -1,16 +1,23 @@
-# React + Vite
+# Pixel Music Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A pixel-art desktop music player built with React and Electron. Features a custom-drawn turntable, spinning vinyl, and an animated needle that "moves" while a track plays.
 
-Currently, two official plugins are available:
+![Pixel Music Player screenshot](pixel-music-player-screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Custom pixel art: hand-drawn turntable, vinyl, and needle sprites
+- Animated needle that flickers between two frames while playing, simulating needle movement
+- Full playback controls: play/pause, next/previous, auto-advance
+- Interactive progress bar with seeking
+- Packaged as a standalone Windows desktop app via Electron
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the Oxlint configuration
+- React + Vite for the UI
+- Electron for the desktop app shell
+- electron-builder for packaging
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Credits
+
+Built by [Emma Strang](https://github.com/emmas04) as a personal project to learn React, Electron, and pixel art design. Concept inspired by [cupidbity/cupid-music-player](https://github.com/cupidbity/cupid-music-player).
